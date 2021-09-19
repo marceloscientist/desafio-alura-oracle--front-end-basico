@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/speakers.css">
+    <link rel="stylesheet" href="./css/form.css">
+
+
     <title>Document</title>
 </head>
 <body>
@@ -13,12 +19,12 @@
         <nav class="main-menu">
             <ul>
                 <li class="menu-item">
-                    <a href="#">
+                    <a href="#panel-about">
                         SOBRE
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href="#">
+                    <a href="#panel-speakers">
                         PALESTRANTE
                     </a>
                 </li>
@@ -30,15 +36,98 @@
                 <h2 class="subtitle">30MAIO|RIO</h2>
             </section>
             <section class="panel-subscribe">
-                <a href="#" class="button">Inscreva-se</a>
+                <a href="#panel-form" class="button">Inscreva-se</a>
             </section>
         </div>   
     </header>
-    <section class="panel-about">
-        <h2 class="title">Muito conteúdo: do frontend ao backend</h2>       
-        <h3 class="subtitle">30 de Maio de 2017 - na Cidade Maravilhosa</h3>
-        <p>Com a AluraConf abordaremos o que há de novidade e conhecimentos essenciais a um desenvolver mobile.</p>
-        <p>É uma grande chance de ficar por dentro dos assuntos de Android, iOS, Web mobile, desenvolvimento híbrido, UX, além da parte backend com Rest, Microservices, e BigData. O desenvolvedor atualizado vai estar aqui.</p>
+    <section id="panel-about" class="panel panel-about">
+        <div class="container">
+            <h2 class="title">Muito conteúdo: do frontend ao backend</h2>       
+            <h3 class="subtitle">30 de Maio de 2017 - na Cidade Maravilhosa</h3>
+            <div class="about-description">
+                <p>Com a AluraConf abordaremos o que há de novidade e conhecimentos essenciais a um desenvolver mobile.</p>
+                <p>É uma grande chance de ficar por dentro dos assuntos de Android, iOS, Web mobile, desenvolvimento híbrido, UX, além da parte backend com Rest, Microservices, e BigData. O desenvolvedor atualizado vai estar aqui.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="panel-speakers"  class="panel panel-speakers">
+        <div class="container">
+            <div class="about-speakers">
+                <h2 class="title">PALESTRANTES</h2>
+                <h3 class="subtitle">Aprenda com palestrantes que são referência de mercado</h3>
+            </div>
+            <ul class="speakers">
+                <li class="speaker">
+                        <figure class="speaker-portrait">
+                            <img class="speaker-image" src="./img/palestrantes/placeholder.jpeg" alt="">
+                            <figcaption class="speaker-name">Marcelo Santana</figcaption>
+                            <p class="speaker-bio"></p>
+                        </figure>
+                        <p class="speaker-speach">To be or not to be</p>
+                </li>
+                <li class="speaker">
+                    <figure class="speaker-portrait">
+                            <img class="speaker-image" src="./img/palestrantes/placeholder.jpeg" alt="">
+                            <figcaption class="speaker-name">Marcelo Santana</figcaption>
+                            <p class="speaker-bio"></p>
+                        </figure>
+                        <p class="speaker-speach">To be or not to be</p>
+                </li>
+                <li class="speaker">
+                        <figure class="speaker-portrait">
+                            <img class="speaker-image" src="./img/palestrantes/placeholder.jpeg" alt="">
+                            <figcaption class="speaker-name">Marcelo Santana</figcaption>
+                            <p class="speaker-bio"></p>
+                        </figure>
+                        <p class="speaker-speach">To be or not to be</p>
+                </li>
+                <li class="speaker">
+                    <figure class="speaker-portrait">
+                            <img class="speaker-image" src="./img/palestrantes/placeholder.jpeg" alt="">
+                            <figcaption class="speaker-name">Marcelo Santana</figcaption>
+                            <p class="speaker-bio"></p>
+                        </figure>
+                        <p class="speaker-speach">To be or not to be</p>
+                </li>
+                <li class="speaker">
+                    <figure class="speaker-portrait">
+                            <img class="speaker-image" src="./img/palestrantes/placeholder.jpeg" alt="">
+                            <figcaption class="speaker-name">Marcelo Santana</figcaption>
+                            <p class="speaker-bio"></p>
+                        </figure>
+                        <p class="speaker-speach">To be or not to be</p>
+                </li>
+                <li class="speaker">
+                    <figure class="speaker-portrait">
+                            <img class="speaker-image" src="./img/palestrantes/placeholder.jpeg" alt="">
+                            <figcaption class="speaker-name">Marcelo Santana</figcaption>
+                            <p class="speaker-bio"></p>
+                        </figure>
+                        <p class="speaker-speach">To be or not to be</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="panel-form" class="panel-form">
+        <div class="container">
+            <h2 class="title">Seus Dados</h2>
+            <form>
+                <fieldset class="field">
+                    <label for="name" >Nome</label>
+                    <input type="text" class="field-input" id="name">
+                </fieldset>
+                <fieldset class="field">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="field-input" name="" id="email">
+                </fieldset>
+                <fieldset class="button-place">
+                    <button type="button">Realizar Inscrição</button> 
+                </fieldset>
+            </form>
+        </div>
     </section>
 </body>
 </html>
+<script src="./js/jquery.js"></script>
+<script src="./js/index.js"></script>

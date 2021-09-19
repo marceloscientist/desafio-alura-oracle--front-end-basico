@@ -1,0 +1,36 @@
+.container {
+
+    width: 96%;
+    margin: 0 auto;
+}
+
+.panel-form .field {
+    display: block;
+    margin: .8em 0;
+    text-align: left;
+    padding: .6em 0;
+    font-weight: 700;
+
+}
+
+.panel-form .field-input {
+    margin-top: .8em;
+    width: 100%;
+    display: block;
+    padding: .8em 0;
+    border-radius: .3em;
+
+
+}
+
+.button {
+    font-size: 1.2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    background:#52ADAF;
+    border-radius: .3em;
+    color: seashell;
+    font-weight: 500;
+    padding: .6em;
+    transition: background-color 0.5s;    
+}

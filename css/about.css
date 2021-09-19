@@ -1,0 +1,36 @@
+
+.panel {
+    padding: 2em 1.5em;
+    line-height: 1.5em;
+}
+
+.panel-about .title {
+    font-size: x-large;
+    font-weight: 600;
+    margin-top: 1em;
+
+}
+
+.panel-about .subtitle {
+    font-size: large;
+    font-weight: 600;
+    margin-top: 0.3em;
+}
+
+.about-description { 
+    margin-top: 0.7em;
+}
+
+
+@media screen and (min-width: 650px) {
+    .header .jumbotron .title {
+        font-size: 68px;
+    }
+    .header .jumbotron .subtitle {
+     font-size: 64px;
+    }
+    
+    .header {
+        height: 350px; 
+    }
+}
