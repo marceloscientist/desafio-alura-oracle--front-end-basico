@@ -1,0 +1,120 @@
+.header {
+    background-image:    url(../img/destaque.jpeg);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;   
+    height: 20em;  
+}
+.header .main-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+
+  .header .main-menu .menu-item {
+    display: inline-block;
+  }
+  
+  .header .main-menu .menu-item a {
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    background: rgba(5, 0, 0, 0.2);
+    border-radius: .5em;
+    color: seashell;
+    font-weight: 500;
+    padding: .6em;
+    margin-right: .3em;
+    transition: background-color 0.5s;
+  }
+
+  .header .main-menu .menu-item a:hover {
+      color: seashell;
+      background-color: #48A3A6;
+  }
+
+
+.header .jumbotron {
+    margin: 2em 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header .panel-main {
+    text-shadow: .8em .8em 2em black;
+}
+
+.header .jumbotron .title {
+    color: seashell;
+    font-size: 4em;
+}
+.header .jumbotron .subtitle {
+ color: #64FF64;
+ font-size: 2.8em;
+ font-weight: 600;
+ margin-top: .3em;
+}
+
+.header .jumbotron .panel-subscribe {
+    margin-top: 1.7em;
+    font-size: 1.2em;
+
+}
+
+.button {
+    font-size: 1.2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    background:#52ADAF;
+    border-radius: .3em;
+    color: seashell;
+    font-weight: 500;
+    padding: .6em;
+    transition: background-color 0.5s;    
+}
+
+.panel-about {
+    padding: 2em 1.5em;
+    line-height: 1.5em;
+}
+
+.panel-about .title {
+    font-size: x-large;
+    font-weight: 600;
+    margin-top: 1em;
+
+}
+
+.panel-about .subtitle {
+    font-size: large;
+    font-weight: 600;
+    margin-top: 0.3em;
+}
+
+.panel-about p { 
+    margin-top: 0.7em;
+}
+
+@media screen and (min-width: 650px) {
+
+}
+
+
+@media screen and (min-width: 1024px) { 
+    .header .jumbotron .title {
+        font-size: 68px;
+    }
+    .header .jumbotron .subtitle {
+     font-size: 64px;
+    }
+    
+    .header {
+        height: 350px; 
+    }
+}
